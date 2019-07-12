@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesale">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<listener class-name="com.globalegrow.base.RetryListener" /> 
+	</listeners>
+	<parameter name="id" value="${id}" />
+	<!-- 运行谷歌浏览器 BW:firefox chrome ie -->
+	<parameter name="browserName" value="${browserName}" />
+	<!-- 配置文件名 -->
+	<parameter name="properties" value="d" />
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="http://login.rosewholesale.com.trunk.s1.egomsl.com/es/m-users-a-sign.htm"/>	
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="ths#^$%^sdaf%T#$%^fasdbhf&amp;U*$%%$^#"/>
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<parameter name="project_code"  value="rosewholesale-pc-d"/>
+		<!-- 项目说明 -->
+	<parameter name="test_specification"  value="PC的trunk环境西班牙语言登录注册、地址"/>
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="${writeindb}"/>
+	<!--参数的值在什么环境  -->
+	<parameter name="env"  value="d"/>
+	<test name="version" preserve-order="true">
+	 <classes>
+	 <class name="com.globalegrow.rosewholesale.RW_register">
+			<methods>
+				<include name="register_repetition" />
+				<include name="register_wrongemail" />
+				<include name="register_inconformityfail" />
+				<include name="register_passwordLength" />
+				<include name="register_dontcheck" />
+				<include name="register_terms" />
+				<include name="register_verificationerror" /> 
+				<include name="register_succeed_a" />
+				<include name="register_success_b" />
+				<include name="register_succeed_c" />
+			</methods>
+		</class>
+		<class name="com.globalegrow.rosewholesale.RW_login">
+			<methods>
+			<include name="signin_wrongemail" />
+				<include name="signin_wrongpassword" />
+				<include name="sigin_passwordLength" /> 
+			 	<include name="sigin_successful" />
+				<include name="modify_passwordempty" />
+				<include name="modify_passwordlength" />
+				<include name="modify_passwordontmatch" />
+				<include name="modify_scuccesful" /> 
+			<!-- 	收不到邮件bug未修复<include name="reset_forgetpassword" />
+				<include name="reset_Wrongemail" />
+				<include name="reset_Passwordempty" />
+				<include name="reset_Passwordontmatch" />
+				<include name="reset_passwordSuccessful" />  -->
+			</methods>
+		</class>
+	 	<class name="com.globalegrow.rosewholesale.RW_adressManage">
+				<methods>
+				 <include name="AllFieldIsNull" />
+			 	<include name="FirstNameIsNull" />
+				<include name="LastNamIsNull" />
+				<include name="EmailaddressIsNull" />
+				<include name="AddressLine1IsNull" />
+				<include name="CountryOrRegionIsNull" />
+				<include name="StateOrCountyIsNull" />
+				<include name="CityIsNull" />
+				<include name="PhoneNumberIsNull" />
+				<include name="ZIPOrPostalCodeIsNull" />
+				<include name="PhoneNumberSpecialChar" />
+				<include name="PhoneNumberCharLess6" />
+				<include name="PhoneNumberCharGreater20" />
+				<include name="AdressLess5" />
+				<include name="AdressEquals5" /> 
+				<include name="EditAdressAndSave" />
+				 <include name="EditAdressAndCancle" />
+				<include name="DeleteAdressSinger" />
+				<include name="DeleteAdressAall" />
+			</methods>
+		</class>  
+	  </classes>
+	</test>
+</suite>

@@ -1,0 +1,96 @@
+#主页面的account按钮
+homeaccount:
+  type:xpath
+  value:"//android.widget.TextView[@text='Account']" 
+#登录页面用户输入用户名
+loginName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/email_edittext
+#登录页面密码输入框
+logingPassword:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/password_edittext
+#点击按钮输入框
+loginSign:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/sign_in_button
+#忘记密码
+foregetPassword:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/forgot_password_textview
+#忘记密码输入框
+foregetSendkey:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/email_edittext
+#确认按钮
+forgetBtn:
+  type:id
+  value:android:id/button1
+#忘记密码检查标题
+forgetTitle:
+  type:id
+  value:android:id/alertTitle
+#忘记密码的按钮
+forgetChang:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/change_password_text_view
+#忘记密码输入原始密码
+forgetOld:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/existing_password_edittext
+#忘记密码输入新密码
+forgetNew:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/new_password_edittext
+#忘记密码确认输入新密码
+forgetNewConfim:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/reenter_password_edittext
+#确定修改
+forgetDone:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/top_bar_right_button
+#facebook登录框
+facebookbtn:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/login_by_facebook_button
+#facebook登录框
+facebookLogin:
+  type:id
+  value:com.facebook.katana:id/login_username
+#facebook密码框
+facebookPassword:
+  type:id
+  value:com.facebook.katana:id/login_password
+#facebook登录按钮
+facebookBtnLogin:
+  type:id
+  value:com.facebook.katana:id/login_login
+#facebook继续支付按钮
+facebookconntiue:
+  type:xpath
+  value:"//android.widget.Button[@content-desc='继续 ']"
+#facebookwebview控件显示用户名内容
+facebookViewname:
+  type:xpath
+  value:"//android.widget.EditText[contains(@text,'邮箱或手机号')]"
+#facebookwebview控件显示密码的内容
+facebookViewpassword:
+  type:xpath
+  value:"//android.widget.EditText[contains(@text,'•••••••••••')]"
+#facebook登录
+facebookViewbtn:
+  type:xpath
+  value:"//android.widget.Button[contains(@content-desc,'登录 ')]"
+#faceBook确定
+facebookViewokBtn:
+  type:xpath
+  value:"//android.widget.Button[contains(@content-desc,'确定')] "
+#登录时出现了一个异常的登录框
+AbnormalLoginBox:
+  type:id
+  value:android:id/message
+#登录时异常弹框cancel
+AbnormalLoginCancel:
+  type:id
+  value:android:id/button2

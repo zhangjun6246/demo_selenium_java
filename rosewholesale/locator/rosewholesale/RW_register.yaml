@@ -1,0 +1,93 @@
+#1 注册页的邮箱输入框
+Register_EmailInput:
+  type: id
+  value: reg_email
+#2 注册页密码输入框
+Register_passwordInput:
+  type: id
+  value: password
+#3 确认密码输入框
+Register_passwordconfirmInput:
+  type: id
+  value: password_confirm
+  
+#4验证码输入框
+Register_verificationcodeInput:
+  type: id
+  value: code
+
+ #5 注册页面的注册按钮
+Register_joinBtn:
+  type: id
+  value: js_registBtn
+#6 注册页面的email输入框
+Register_EmailInput:
+  type: id
+  value: reg_email 
+  
+ # 注册页面的同意条款复选框
+Register_AgreementCheckbox:
+  type: id
+  value: agreement
+  
+# 注册页面的错误提示,提示邮箱己被注册
+regPage_ErrInfoEmailAlreadyInUse:
+  type: xpath
+  value: "//div[@class='ipt_t']/label[@class='error'and@for='reg_email']"
+  
+ 
+#注册页面的错误提示,提示请输入不相同的密码
+Register_ErrInfoEnterSamePassword:
+  type: xpath
+  value: "//div[@class='ipt_t']/label[@class='error'and@for='password_confirm']"
+#同意页面
+Register_ViewTerms:
+  type: linkText
+  value: Terms and Conditions
+#西班牙语
+Register_ViewTermses:
+  type: linkText
+  value:Términos y Condiciones  
+#注册页面的错误提示，提示请输入正确的Eamil地址
+Register_ErrInfoEmailmistake:
+  type: xpath
+  value: "//div[@class='ipt_t']/label[@class='error'and@for='reg_email']"
+#注册页面的错误提示,提示同意条款
+Register_ErrInfoAgreeTerms:
+  type: xpath
+  value:"//*[@id='signupform']/p/label"
+#注册页面的错误提示，密码长度小于6
+Register_ErrInfopslength:
+  type:xpath
+  value:"//div[@class='ipt_t']/label[@class='error'and@for='password']"
+#注册页面的错误提示，验证码错误
+Register_ErrInfcode:
+  type:xpath
+  value:"//div[@class='operalForm pt10']/p[@class='msg_error reg_msg_error']"
+
+#注册成功，个人信息页，查看更多
+Register_SeemoreLink:
+ type:linkText
+ value:See More >>
+ #注册成功，个人信息页，查看更多
+Register_SeemoreLink_es:
+ type:linkText
+ value:Ver Más >>
+#待修改，定位方式，注册成功，查看积分：
+Register_look:
+  type:xpath
+  value:"//*[@id='userMain']/div[2]/div[1]/a[2]"
+  
+#待修改，定位方式，注册成功，points显示获得10个积分
+Register_getIntegral:
+ type:xpath
+ value:"//*[@id='userMain']/div[2]/table/tbody/tr[2]/td[5]"
+
+#注册成功，获得1个促销码
+Register_PromotionCode:
+  type:xpath
+  value:"//div[@class='coupon']/strong"
+#注册成功，获得奖品集合
+RegisterPromotionCodelist:
+  type:css
+  value:"#userMain > div.userH_box.mySpoint.p15 > table > tbody >tr"

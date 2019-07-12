@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesale">
+    <!-- 配置testng监听器 -->
+	<listeners>
+	     <listener class-name="com.globalegrow.base.TestngListener2" />
+	     <listener class-name="com.globalegrow.base.RetryListener" />
+	</listeners>
+	<parameter name="id"  value="${id}"/>
+	<!-- 运行谷歌浏览器 BW:firefox chrome ie-->
+	<parameter name="browserName"  value="${browserName}"/>
+	<!-- 配置文件名 -->
+	<parameter name="properties"  value="prd"/>
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="https://login.rosewholesale.com/m-users-a-sign.htm"/>	
+	<!-- 测试秘钥正式环境 -->
+	<parameter name="keys"  value="thfhh*()%$bndfjhfdW#$%#$&amp;%%$FDgsdg"/>	
+	<!-- 测试环境PP支付的方式 -->
+	<!-- PP支付账户及密码 -->	
+	<parameter name="PPaccount" value="shoppingonline6688@hotmail.com"/>
+	<parameter name="password" value=""/>
+	<parameter name="loginEmial" value="autotest25@globalegrow.com"/>
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<parameter name="project_code"  value="rosewholesale-pc-prd"/>
+	<!--参数的值在什么环境  -->
+	<parameter name="env"  value="prd"/>
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="${writeindb}"/>
+	<test name="version" preserve-order="true">
+		<classes>	
+			<class name="com.globalegrow.rosewholesale.RW_order_manage">
+				<methods>	
+				    <!-- 选择快递方式价格正确 -->  
+				    <!-- 使用支付全部注销 -->
+						
+						<!-- <include name="pay_Brazil" />  bug -->
+						 <include name="pay_blendPay" /> 						
+					   <include name="continue_pp_pay" />
+					    <include name="continue_pay_credit" />  
+						<include name="cancelorder" /> 
+						<include name="quick_payment" />	
+						
+				</methods>		
+			</class> 			
+		</classes>
+	</test>
+</suite>

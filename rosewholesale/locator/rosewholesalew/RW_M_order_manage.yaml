@@ -1,0 +1,530 @@
+#登录页电子邮箱
+loginPage_loginEmail:
+  type: id
+  value: email
+
+#密码
+loginPage_loginPwd:
+  type: id
+  value: password
+#验证码
+loginCode:
+  type: id
+  value: codeSign
+#登录按钮
+loginPage_signInBtn:
+  type: id
+  value: js_signInBtn
+#登录成功获得欢迎语句
+loginHomePage:
+  type:css
+  value:"#mainWrap > section.user-info.mt5 > div > p"
+#地址管理链接
+BookBotton:
+  type: linkText
+  value: Shipping Address Book
+  
+#我的订单页面
+#MyAccout订单链接
+myorderLink:
+  type: linkText
+  value: My Orders:
+#订单详细信息
+orderDetailList:
+  type: css
+  value:"#mainWrap > div.order-detail-wrap > section.order-info.order-number > ul > li"
+#订单编号
+orderCodeSuccess:
+  type: css
+  value: "#mainWrap > div.msg-page > a"
+#订单总额
+orderPaySum:
+  type: css
+  value: "div.section_header > strong"
+#订单状态
+orderStatus:
+  type: css
+  value: "div.section_header > a"
+#取消订单
+cancelOrder:
+  type: linkText
+  value: Cancel
+#支付订单
+payOrder:
+  type: linkText
+  value: Pay
+#支付订单2
+payOrder2:
+  type: css
+  value: Pay
+
+
+#商品页面
+#添加至购物车按钮
+addcart:
+  type: id
+  value: addCart
+#购物车数量
+goodscartQuity:
+  type:id
+  value:js_input_quantity
+#商品单价
+unit_price:
+  type: id
+  value: unit_price
+#商品价格
+goodsQuity:
+  type: id
+  value: js_qty
+#购物车图标
+balltarget:
+  type: id
+  value: balltarget
+
+#新增地址
+addShipAddr:
+  type: linkText
+  value: ADD NEW ADDRESS
+#删除一个按钮
+delectBtn:
+  type:css
+  value:"#js_shippingAdreWrap > ul > li:nth-child(1) > div > a.btn.btn-default.btn-delete.ml10.js_del"  
+#弹出框中的yes链接
+delete_yes:
+  type: xpath
+  value:"//*[text()='YES']"  
+#结算页面
+proceedToCheckout:
+  type:css
+  value:"#js_payBtn > a.btn.btn-db.btn-info.ttu.fb.f18"
+#购物车页面
+#购物车数量
+cartQuitylist:
+  type: css
+  value: "#js_cartCnt > section"
+#商品数量
+cartGoodQuity:
+  type: css
+  value: "div.info.fl > ul > li.clearfix > div.selWrap.fl > select"
+#商品数量2
+cartGoodQuity2:
+  type: css
+  value: "#js_cartCnt > section > div.info.fl > ul > li.clearfix > div.selWrap.fl > select"
+#商品金额
+cartGoodPrice:
+  type: css
+  value: "#cartListBox > table > tbody > tr > td:nth-child(2) > p.price-line > strong > span.my_shop_price"
+#总金额
+cartSumPay:
+  type: css
+  value: "#js_cartCnt > div.cartTotal > span.my_shop_price"
+#加入结算页面
+addBalance:
+  type: css
+  value: "#js-paypalBox > a > button"
+
+#save按钮
+saveBtn:
+  type: css
+  value: "#addressfrom > div.pt10 > button"
+#结算页面
+#地址
+blAddress:
+  type: css
+  value: "#placeOrderWrap > section.shipping-address > ul> li"
+#邮件方式列表
+blPostTypeList:
+  type: css
+  value: "#placeOrderWrap > section.shipping-method > ul > li"
+#邮递方式
+blPostType:
+  type: css
+  value: "input[name = 'shipping'][type = 'radio']"
+#邮递方式
+shipping1:
+  type: id
+  value: shipping1
+#邮递方式
+shipping5:
+  type: id
+  value: shipping5
+#邮递方式
+shipping2:
+  type: id
+  value: shipping2
+#邮递方式
+shipping4:
+  type: id
+  value: shipping4
+#追踪码
+Need_Traking:
+  type: id
+  value: Need_Traking_number1
+#保单费
+blinsurance:
+  type: id
+  value: insurance_checked
+#保单费2
+blinsurance2:
+  type: xpath
+  value: "//*[@id='placeOrderWrap']/section[2]/div/div[5]"
+#保单费标题
+blinsuranceTittle:
+  type: css
+  value: "#placeOrderWrap > section.module.placeOrdeMethod > div > div.item.item_insurance > strong"
+#保单费标题2
+blinsuranceDiv:
+  type: css
+  value: "#placeOrderWrap > section.module.placeOrdeMethod > div > div.item.item_insurance"
+#支付方式列表
+blpayTypeList:
+  type: css
+  value: "#placeOrderWrap > section.payment-method > ul > li"
+#支付方式
+blpayType:
+  type: css
+  value: "input[name = 'payment']" 
+#支付方式列表
+paymentlistwebcollect:
+  type: id
+  value: paymentlistwebcollect
+#邮递方式
+blPostType:
+  type: css
+  value: "input[name = 'shipping']"
+
+#促销码输入框
+blPromotionCode:
+  type: id
+  value: promotion_code
+#使用促销码按钮
+blApplyBtn:
+  type: id
+  value: js_applyBtn
+#放弃促销码
+cancelCoupon:
+  type: linkText
+  value: Tap here to cancel coupon code
+#购物车总价
+shppingsubTotal:
+  type:id
+  value:subTotal
+
+#商品总价
+subTotal:
+  type: css
+  value: "#placeOrderWrap > section.total-cost > ul > li:nth-child(1) > strong > span.my_shop_price.js_itemTotal"
+#快递总价
+postTotal:
+  type: css
+  value:"#placeOrderWrap > section.total-cost > ul > li:nth-child(3) > strong > span.my_shop_price.js_shippingMethod"
+  #value:"#placeOrderWrap > section.total-cost > ul > li:nth-child(2) > strong > span.my_shop_price.js_shippingMethod"
+#保单费
+tracking:
+  type: css
+  value: "#placeOrderWrap > section.total-cost > ul > li:nth-child(4) > strong > span.my_shop_price.js_trackingNumber"
+  #value:"#placeOrderWrap > section.total-cost > ul > li:nth-child(3) > strong > span.my_shop_price.js_trackingNumber"
+#追踪码
+insurance:
+  type: css
+  value: "#placeOrderWrap > section.total-cost > ul > li:nth-child(5) > strong > span.my_shop_price.js_baoFei"
+  #value:"#placeOrderWrap > section.total-cost > ul > li:nth-child(4) > strong > span.my_shop_price.js_baoFei"
+#合计
+sumTotal:
+  type: css
+  value: "#placeOrderWrap > section.total-cost > div > strong > span.my_shop_price.js_total"
+
+#支付按钮
+placeOrder:
+  type: css
+  value: "#theForm > div.placeOrdertotal > button"
+
+#pp支付
+#支付总金额
+ppPaySum:
+  type: css
+  value: "#cart > p > span"
+#pp用户名
+ppName:
+  type: id
+  value: email
+#pp密码
+ppPwd:
+  type: id
+  value: password
+#立刻支付
+ppLogin:
+  type: id
+  value: login
+#继续
+ppContinue:
+  type: id
+  value: continue
+#支付成功提示语1
+successMsg1:
+  type: css
+  value: "#mainWrap > div.msg-page > p"
+
+#订单号
+orderCode:
+  type: css
+  value: "body > scr > section.orderSummary > div > ul > li:nth-child(1) > p"
+#支付金额
+payMoney:
+  type: css
+  value: "body > scr > section.orderSummary > div > ul > li:nth-child(2) > p"
+#支付方式
+payType:
+  type: css
+  value: "body > scr > section.orderSummary > div > ul > li:nth-child(3) > p"
+#跳转Home
+home:
+  type: linkText
+  value: Home
+
+#信用卡支付
+#支付页面金额
+gcartPayMoney:
+  type: css
+  value: "#pageMain > div.total > strong"
+#信用卡卡号输入框
+gcartNumber:
+  type: id
+  value: CREDITCARDNUMBER
+#支付页面的支付按钮
+PlaceYourOrderBtn:
+  type:id
+  value:btn-submit-order
+#登录成功获得欢迎语句
+loginHomePage:
+  type:css
+  value:"#mainWrap > section.user-info.mt5 > div > p"  
+#退出按钮
+LoGout:
+  type:css
+  value:"#mainWrap > p > a"
+#地址管理
+#firstname
+firstname:
+  type: id
+  value: firstname
+#lastname
+lastname:
+  type: id
+  value: lastname
+#电子邮件
+email:
+  type: id
+  value: email 
+#地址1
+addressline1:
+  type: id
+  value: addressline1 
+#地址2
+addressline2:
+  type: id
+  value: addressline2  
+#Country/Region
+CountryRegion:
+  type: name
+  value: country 
+#State/County
+province:
+  type: name
+  value: province 
+#city
+city:
+  type: id
+  value: city 
+#电话号码
+tel:
+  type: id
+  value: tel
+#邮政编码
+zipcode:
+  type: id
+  value: zipcode  
+#提交
+comfirmEdit:
+  type: css
+  value: "#addressfrom > div.pt10 > button"
+#订单列表中获取订单编号
+orderNo:
+  type:css
+  value:"#mainWrap > div.order-detail-wrap > section.order-info.order-number > ul > li:nth-child(1) > span"
+  
+#订单列表订单地址详细信息
+orderTotalCost:
+  type:css
+  value:"#mainWrap > div.order-detail-wrap > section.order-info.total-cost > ul > li"
+#订单列表页面的地址
+orderShippingAddress:
+  type:css
+  value:"#mainWrap > div.order-detail-wrap > section.order-info.shipping-address > ul > li"
+#跟踪码
+Traceability:
+  type:id
+  value:traking_number
+#跟踪码价格
+Trackingcodeprice:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(1) > p:nth-child(4) > strong > label.vam.ml5 > strong > span.my_shop_price"
+#订单列表
+addresList:
+  type:css
+  value:"#mainWrap > div.order-list-wrap > section:nth-child(2) > div.tit > p:nth-child(1) > a"
+#订单列表中的总价
+addresListTotal:
+  type:css
+  value:"#mainWrap > div.order-detail-wrap > div > p > strong > span.my_shop_price"
+#订单列表中的快递方式
+Deliverise:
+  type:css
+  value:"#mainWrap > div.order-detail-wrap > section.order-info.order-number > ul > li:nth-child(5) > span"
+  
+#运输方式，标准运输
+standsShippingMethod:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(2) > div > div > ins"
+#运输方式，标准运输,针对外网
+officialStandsShipping:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(3) > div > div > ins"
+
+#标准运输方式的价格
+standsShippingPrice:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(2) > p:nth-child(3) > strong > span.my_shop_price"
+#快递运输方式
+ExpeditedShippingMethod:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(3) > div > div > ins"  
+#快递运输方式
+officialExpeditedShippingMethod:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(4) > div > div > ins"  
+#快递运输方式的价格
+ExpeditedShippingPrice:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(3) > p:nth-child(3) > strong > span.my_shop_price"
+#不勾选保险费
+shippingInsurance:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(5) > div > div > ins"
+#外网不勾选保险费
+officialShippingInsurance:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(6) > div > div > ins"
+#页面计算的保险费结果
+shippingInsurancePrice:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(5) > p:nth-child(2) > strong > span.my_shop_price"
+#外网页面计算的保险费
+officialShippingInsurancePrice:
+  type:css
+  value:"#placeOrderWrap > section.shipping-method > ul > li:nth-child(6) > p:nth-child(2) > strong > span.my_shop_price"  
+#能使用的积分
+Point:
+  type:id
+  value:points
+#信用卡支付
+cardPay:
+  type:css
+  value:"#placeOrderWrap > section.payment-method > ul > li.iCheckArea.webcollect > div > div > ins"
+#信用卡继续支付页面按钮
+cardPayContiue:
+  type:id
+  value:js_upFormBtn
+#订单状态
+orderStaus:
+  type:css
+  value:"#mainWrap > div.order-detail-wrap > section.order-info.order-number > ul > li:nth-child(2) > span.theme"
+#继续支付
+payconntiue:
+  type:css
+  value:"#mainWrap > div.order-detail-wrap > div > p.pay-your-order > a"
+
+#积分折扣价 
+pointSave:
+  type:css
+  value:"#placeOrderWrap > section.eb-points > div > p > strong > span.my_shop_price.js_pointsPrice"
+#取消第一个订单
+CancaleOrder:
+  type:css
+  #value:"#mainWrap > div.order-list-wrap > section:nth-child(2) > div.action-order > a.btn.btn-default.ttu.f14.js_cancel"
+  value:"#mainWrap > div.order-list-wrap > section:nth-child(1) > div.action-order > a.btn.btn-default.ttu.f14.js_cancel"
+
+#测试环境第一个订单
+testCancaleOrder:
+  type:css
+  value:"#mainWrap > div.order-list-wrap > section:nth-child(2) > div.action-order > a.btn.btn-default.ttu.f14.js_cancel"
+  
+#mainWrap > div.order-list-wrap > section:nth-child(2) > div.action-order > a.btn.btn-default.ttu.f14.js_cancel
+#确认取消按钮
+cancelYes:
+  type:css
+  value:"#layui-m-layer0 > div.layui-m-layermain > div > div > div.layui-m-layerbtn > span:nth-child(2)"
+  
+
+#登录页面的积分
+loginPoint:
+  type:css
+  value:"#mainWrap > section.user-list > ul > li.mypoints > a.list-link > p > strong"
+#获取登录名称
+PPlogin:
+  type:css
+  value: "#userInfoForm > div:nth-child(4) > input" 
+#取消订单
+cancelListOrder:
+  type:css
+  value:"#mainWrap > div.order-list-wrap > section"
+#地址列表页
+addressList:
+  type:css
+  value:"#js_shippingAdreWrap > ul > li"
+#外网支付提交按钮
+officialLgoinBtn:
+  type:id
+  value:btnLogin
+#外网支付用户名输入框
+officialLoginName:
+  type:id
+  #value:"//input[@name='login_email'][@id='email']"
+  #value:"//div[@class='textInput lastInputField']/div/input[@id='password']"
+  value:email
+#外网支付密码输入框
+officialLoginPassword:
+  type:id
+  value:password
+#外网支付继续支付的按钮
+officialppContinue:
+  type:id
+  value:confirmButtonTop
+#外网信用卡按钮
+officialPayCard:
+  type:id
+  value:checkoutAsAGuestBtn
+#外网其他支付按钮
+officialsignupBtn:
+  type:id
+  value:signupBtn
+#外网支付弹出一个登录确认框
+officiaLoginBtn:
+  type:css
+  value:"#loginSection > div > div.span11.alignRight.baslLoginButtonContainer > a"
+#外网支付时的总价
+officiaTotal:
+  type:css
+  value:"#transactionCart > span:nth-child(2) > format-currency > span"
+#外网环境的测试订单号
+officiaOrder:
+  type:css
+  value:"#mainWrap > div.order-list-wrap > section:nth-child(1) > div.tit > p:nth-child(1) > a"
+#测试环境的订单号
+Order:
+  type:css
+  value:"#mainWrap > div.order-list-wrap > section:nth-child(2) > div.tit > p:nth-child(1) > a"
+#支付环境的PP账号登录页面
+iframes:
+  type:xpath
+  value:"//iframe[@name='injectedUl']"

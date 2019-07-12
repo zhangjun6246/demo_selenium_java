@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesalea">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<listener class-name="com.globalegrow.base.RetryListener" /> 
+	</listeners>
+	<parameter name="id" value="${id}" />
+	<!-- 运行谷歌浏览器 BW:firefox chrome ie -->
+	<parameter name="browserName" value="${browserName}" />
+	<!-- 配置文件名 -->
+	<parameter name="properties" value="trunk" />
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<parameter name="project_code"  value="rosewholesale-android-prd"/>
+	<!-- 发送邮件 -->
+	<parameter name="sendEmail" value="${sendEmail}"/>
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="${writeindb}"/>
+	<parameter name="devices" value="${devices}"/>
+	<!-- 是否重新安装App(true-重新安装,false-不重新安装) -->
+	<parameter name="installApp" value="true" />
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="http://www.rosewholesale.com"/>
+	<!-- Android App相关配置 -->
+	<parameter name="appPackage" value="com.globalegrow.app.rosewholesale" />
+	<parameter name="appActivity" value="com.globalegrow.app.rosegal.view.activity.system.SplashActivity" />
+	<parameter name="appName" value="com.globalegrow.v1.5_release.apk" />
+	<parameter name="devices" value="${devices}" />
+	<!--参数的值在什么环境  -->
+	<parameter name="env"  value="prd"/>
+	<!-- 取值为:UIAUTOMATOR或UIAUTOMATOR2,不用toast2就去掉2  -->
+	<parameter name="automation_name"  value="UIAUTOMATOR"/>
+	<test name="version" preserve-order="true">                 
+	 <classes>
+	 	<class name="com.globalegrow.base.InitAndriodTest"></class>
+	 	<class name="com.globalegrow.rosewholesalea.RW_A_address">
+			<methods>
+				<include name="allOptions" /> 
+				<include name="phoneCheck" />
+				<include name="lessPhone" />
+				<include name="editAddress" />
+				<include name="deleteAddress" />
+			</methods>
+			</class>
+
+		<class name="com.globalegrow.rosewholesalea.RW_A_cart">
+			<methods>
+				<include name="empty_shopping"/> 
+				<include name="cart_product_regular_price"/>
+				<include name="cart_promote_product"/>	
+				<!-- <include name="cart_clearance_product"/>  bug  -->
+				<include name="cart_addShooping_price"/>
+				<include name="cart_addShooping_favorite"/>
+				<include name="notLogin_addshooping"/> 
+				<include name="modify_goods_number"/>
+				<!-- <include name="modify_goods_number_inventory"/>等待时间开启 -->
+				<include name="delete_one_product"/>
+				<include name="delete_all_product"/>
+			</methods>
+			</class>
+	  </classes>
+	</test>
+</suite>

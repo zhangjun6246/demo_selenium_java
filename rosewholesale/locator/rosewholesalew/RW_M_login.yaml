@@ -1,0 +1,121 @@
+#登录
+#登录页电子邮箱
+loginPage_loginEmail:
+  type: id
+  value: email
+#密码
+loginPage_loginPwd:
+  type: id
+  value: password
+
+#登录按钮
+loginPage_signInBtn:
+  type: id
+  value: js_signInBtn
+#错误邮箱提示
+loginPage_errorEmail:
+  type:css
+  value:"#loginForm > div:nth-child(1) > label.error"
+#密码错误登录失败提示
+loginPage_pwdErrorMsg:
+  type: id
+  value: js_errorMsg  
+#密码小于6未提示
+loginPage_pwdLessSixErrorMsg:
+  type: css
+  value: "#loginForm > div:nth-child(2) > label.error"  
+
+#我的头像
+my_avatar:
+  type: id
+  value: my_avatar
+#退出
+logout:
+  type: linkText
+  value: Logout
+#验证码
+loginCode:
+  type: id
+  value: codeSign
+#忘记密码
+#忘记密码链接
+forgotPwd:
+  type: linkText
+  value: Forgot your password?
+#邮箱输入框
+forgotEmail:
+  type: id
+  value: email
+#提交按钮
+forgotSubmit:
+  type: id
+  value: js_sendEmial
+#提交按钮
+topTipsMsg:
+  type: css
+  value: "body > div.resetPs.resetPsTips > p"
+
+#登录Facebook
+#Facebook登录链接
+FBLogin:
+  type: id
+  value: btnFBLogin
+#首页顶部按钮
+logintopbtn:
+  type:id
+  value:js_navTopmenu
+#我的主页
+myaccount:
+  type:linkText
+  value:My Account
+#登录成功获得欢迎语句
+loginHomePage:
+  type:css
+  value:"#mainWrap > section.user-info.mt5 > div > p"
+  
+#忘记密码邮件地址输入框
+forgotPasswordInput:
+  type:id
+  value:reg_email
+#忘记密码按钮
+forgotPasswordBtn:
+  type:id
+  value:js_sendEmial
+#忘记密码获取邮件成功
+forgetpassword_head:
+ type:xpath
+ value:"//*[@id='mainWrap']/section/header/h4"
+ 
+#确认已经发送邮件
+checkEmailAddress:
+  type:linkText
+  value:HOME
+#退出按钮
+LoGout:
+  type:css
+  value:"#mainWrap > p > a"
+#facebook登录                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+loginFaceBook:
+  type:id
+  value:js_loginFacebook
+  
+#facebook登录用户明输入框
+loginEamil:
+  #type:css
+  #value:"#u_0_1 > div._56be._5sob > div > input"
+   type:xpath
+   value:"//input[@name='email']"
+#facebook密码输入框
+loginPassword:
+  #type:id
+  #value:u_0_2
+  type:xpath
+  value:"//input[@name='pass']"
+#facebook登录按钮
+loginBtn:
+  type:xpath
+  value:"//button[@name='login']"
+#facebook继续登录按钮
+facebookloginconntinue:
+  type:xpath
+  value:"//button[@name='__CONFIRM__']"

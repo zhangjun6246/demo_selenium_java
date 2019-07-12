@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesalew">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<!-- <listener class-name="com.globalegrow.base.RetryListener" />  -->
+	</listeners>
+	<!-- id:jenkins编译id(${id}) -->
+	<parameter name="id"  value="${id}"/>
+	<!-- browserName:Browser(手机自带浏览器)/Chrome(谷歌浏览器) -->
+	<parameter name="browserName"  value="Chrome"/>
+	<!-- 运行系统的安卓版本 -->
+	<parameter name="platformVersion"  value="6.0.1"/>
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="http://m.wap-rosewholesale.com.a.s1cg.egomsl.com/user/login/sign"/>	
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="ths#^$%^sdaf%T#$%^fasdbhf&amp;U*$%%$^#"/>
+	<test name="version" preserve-order="true">
+	 <classes>
+	  		<!-- 初始化模块-->
+			<class name="com.globalegrow.base.Init"></class>
+			<!-- 注册模块 -->
+	 	<!-- 	<class name="com.gloablegrow.rosewholesalew.RW_M_register">
+				<methods>			
+						<include name="register_repetition" />
+						<include name="register_wrongemail" />
+						<include name="register_inconformityfail" />
+						<include name="register_passwordLength" />
+						<include name="register_dontcheck" />
+						<include name="register_terms" />
+						<include name="register_verificationerror" />
+						<include name="register_succeed_a" />
+						<include name="register_success_b" />
+						<include name="register_succeed_c" /> 
+				</methods>
+			</class>  -->
+			<class name="com.gloablegrow.rosewholesalew.RW_M_login">
+				<methods>
+						<include name="signin_wrongemail" />
+						<include name="signin_wrongpassword" /><!-- 有问题 -->
+						<include name="sigin_passwordLength" />
+						
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,225 @@
+#主页面的account按钮
+homeaccount:
+  type:xpath
+  value:"//android.widget.TextView[@text='Account']" 
+#登录页面用户输入用户名
+loginName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/email_edittext
+#登录页面密码输入框
+logingPassword:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/password_edittext
+#点击按钮输入框
+loginSign:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/sign_in_button
+#搜索页面
+Categories:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/categories_text_view
+#输入sku
+search:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/edittext
+#搜查出来的商品
+resultSearch:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/iv_goods_image
+#account按钮
+addressAccount:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/account_text_view
+#新增地址页面
+adddressBook:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/shipping_address_text_view
+#删除地址
+Address:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/tv_exists_address
+#编辑地址
+editAddress:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/top_bar_right_button
+#确认删除
+deleteAddress:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/iv_delete_image
+#确认按钮
+affirmdelete:
+   type:id
+   value:android:id/button1
+#新增地址
+newAddress:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/btn_add_new_address
+
+#firstName
+firestName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_first_name
+#lastName
+lastName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_last_name
+#address1
+address1:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_first_address
+#address2:
+address2:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_second_address
+#地区:
+states:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/tv_country
+#选择地区
+chooseStates:
+  type:xpath
+  value:"//android.widget.TextView[@text='France']"
+#province
+province:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_state_province_region
+#选择
+chooseProvince:
+  type:xpath
+  value:"//android.widget.TextView[@text='Ain']"
+#城市
+city:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_city
+#邮编
+code:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_zip_code
+#电话号码
+phoneNumber:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/et_phone_number
+#点击done
+done:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/top_bar_right_button
+#点击勾选
+addressSelection:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/iv_selected_address
+#支付按钮
+placeSecureOrder:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/place_order_button
+#确认结算
+checkOut:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/checkout_button
+
+#添加到购物车
+Addshopping:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/add_to_cart_button
+#点击购物车图标按钮
+shoopinggo:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/show_buttom_image_view
+#点击结算
+placeSecure:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/place_order_button
+#获取支付页面的总价
+placePrice:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/total_price_text_view
+#pp支付页面控件邮件
+ppEmail:
+  type:id
+  value:email
+#pp支付与页面控件密码
+ppPassword:
+  type: xpath
+  value: "//android.widget.EditText[@resource-id='password']"
+#pp支付登录按钮
+ppLogin:
+  type:id
+  value:btnLogin
+#老页mainpp登录
+ppoldLogin:
+  type:id
+  value:login
+#pp继续支付按钮
+ppContinue:
+  type:xpath
+  value:"//android.widget.Button[@resource-id='confirmButtonTop']"
+#pp继续支付按钮2
+ppContinue2:
+  type:id
+  value:continue
+
+#支付成功页面
+paySuccessfullyMes:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/order_success_tips
+#获取订单号
+payOrder:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/order_sn_textview
+#获取支付总价
+payPrice:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/total_amount_textview
+#获取支付方式
+payMethod:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/payment_method_textview
+#支付成功后的account
+payAccount:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/top_bar_right_button
+#order入口
+myOrder:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/my_orders_text_view
+#支付方式的集合
+payCard:
+  type:xpath
+  value:"//android.widget.TextView[@text='Pay by credit card.']"
+#信用卡输入框
+cardNumber:
+  type:id
+  value:CREDITCARDNUMBER
+#点击返回
+cardReturn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/top_bar_left_image_view
+#支付的状态
+payStates:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/tv_payment_status
+#支付的订单号
+payOrder:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/tv_order_sn
+#支付的总价
+payTotal:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/tv_order_amount
+   
+   
+#够额车设置商品数量
+shoopingSetNumber:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/goods_qty_edit_text
+#购物车的编辑按钮
+shoopingEditBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/edit_cart_button
+#退出
+signOut:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/logout_button
+#信用卡的继续支付按钮
+cardContinue:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/webcollect_continue

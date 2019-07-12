@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesale">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<!-- <listener class-name="com.globalegrow.base.RetryListener" /> -->
+	</listeners>
+	<parameter name="id" value="${id}" />
+	
+	<!-- 运行谷歌浏览器 BW:firefox chrome ie -->
+	<parameter name="browserName" value="${browserName}" />
+	<!-- 配置文件名 -->
+	<parameter name="properties" value="prd" />
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="http://rosewholesale.com.trunk.s1.egomsl.com/"/>	
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="ths#^$%^sdaf%T#$%^fasdbhf&amp;U*$%%$^#"/>	
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<!-- 测试环境PP支付的方式 -->
+	<parameter name="PPaccount" value="441817_1310950685_per@qq.com"/>
+	
+	<parameter name="project_code"  value="rosewholesale-pc-prd"/>
+
+
+	<!--参数的值在什么环境  -->
+	<parameter name="env"  value="prd"/>
+	
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="${writeindb}"/>
+	<!-- 项目说明 -->
+	<parameter name="test_specification"  value="PC常规测试"/>
+	
+	<test name="version" preserve-order="true">
+		 <classes>
+			  <class name="com.globalegrow.rosewholesale.RW_conventional">
+				<methods>
+					<!-- <include name="registered" />
+					 <include name="login" /> 
+				 	 <include name="facebooklogin" /> 
+				 	<include name="quick_pay"/>
+					<include name="pp_pay"/>
+					<include name="card_pay"/> 
+					 <include name="cart_price"/>
+					<include name="cart_delete"/>
+					<include name="cart_addProduct"/>
+					<include name="product_price"/>
+					<include name="product_picture"/>
+					<include name="product_sizeColor"/> 
+					 <include name="Fuzzy_search"/>
+					<include name="sku_search"/>
+					<include name="title_search"/>  -->
+					
+					<include name="home_page"/>					
+					<include name="swimwear_classification" /> 
+					 <include name="swimwear_leve3_classification" />
+					<include name="swimwear_lowtoHighSorting" />
+					<include name="swimwear_hightoLowSorting" />			
+					<include name="swimwear_turnPage" />
+					
+					<include name="women_classification"/>
+					<include name="bagss_classification" />
+					<include name="home_classification" />			
+					<include name="plusesize_classification" />
+					<include name="men_classification" />
+					<include name="HAIR_classification" />
+					<include name="watch_classification"/>
+					<include name="jewelry_classification" /> 
+					<include name="shoes_classification" />
+					 <include name="accessories_classification" />
+					<include name="kids_classification" />
+					<include name="clearance_classification" />
+					
+				</methods> 
+			</class> 
+	 
+	 </classes>
+	</test>
+</suite>

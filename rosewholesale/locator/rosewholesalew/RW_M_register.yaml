@@ -1,0 +1,71 @@
+#注册页中点击注册按钮
+loginPage_NewUser:
+  type: linkText
+  value: New user?
+#注册页面的 注册邮箱输入框
+RegisterPage_Email:
+  type: id
+  value: email
+#注册页面的 注册 密码输入框
+RegisterPage_Password:
+  type: id
+  value: password  
+#注册页面的 注册 确认密码输入框
+RegisterPage_RegConfirmPassword:
+  type: id
+  value: password_confirm  
+#注册页面的REGISTER按钮
+RegisterPage_RegBtn:
+  type: id
+  value: js_registBtn
+#注册页面的 注册 错误提示,提示邮箱己被注册
+RegisterPage_RegErrInfoEmailAlreadyInUse:
+  type: css
+  value: "#RegisterForm > div:nth-child(1) > label.error"
+#注册页面，密码不一致给予提示
+RegisterPage_RegErrInfoPasswordNot:
+  type:css
+  value:"#RegisterForm > div:nth-child(3) > label.error"
+#注册页面，密码小于6位
+RegisterPage_RegErrInfoLessthan6:
+  type:css
+  value:"#RegisterForm > div:nth-child(2) > label.error"
+#去掉复选框
+RegisterPage_Uncheck:
+  type:css
+  value:"#RegisterForm > p > label > input[type='checkbox']"
+  
+#去掉复选框给予的提示
+RegisterPage_RegErrInfoUncheck:
+  type:css
+  value:"#RegisterForm > p > label > label"
+  
+#验证码输入框
+RegisterPage_Code:
+  type:id
+  value:code
+#进入到注册说明页
+RegisterPage_Terms:
+  type:linkText
+  value:Terms and Conditions
+#注册页文案
+RegisterPage_TermsText:
+  type:css
+  value:"#mainWrap > div.article-wrap > h3"
+
+#获得积分和促销码的入口
+RegisterPage_myrPoint:
+  type:css
+  value:"#mainWrap > section.user-list > ul > li.mypoints > a.list-link > p"
+#获得积分的文案
+RegisterPage_Point:
+  type:css
+  value:"#mainWrap > div.points-wrap > ul > li"
+#获得促销码
+RegisterPage_sigining:
+  type:css
+  value:"#mainWrap > div.points-wrap > ul > li:nth-child(2) > div.time > p"
+#错误验证码
+RegisterPage_ErrorCode:
+  type:id
+  value:js_errorMsg

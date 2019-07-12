@@ -1,0 +1,150 @@
+#主页面的account按钮
+homeaccount:
+  type:xpath
+  value:"//android.widget.TextView[@text='Account']" 
+#登录页面用户输入用户名
+loginName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/email_edittext
+#登录页面密码输入框
+logingPassword:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/password_edittext
+#点击按钮输入框
+loginSign:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/sign_in_button
+#account按钮
+addressAccount:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/account_text_view
+#bag按钮
+bagbtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/cart_text_view
+#空购物车的提示信息
+emptyMessage:
+   type:xpath
+   value:"//android.widget.TextView[@text='Your Shopping Bag is empty.']"
+#点击购物车的按钮
+emptyBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/shopping_now_button
+#主页面地址
+homeImage:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/home_item_goods_image_view
+#搜索页面
+Categories:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/categories_text_view
+#输入sku
+search:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/edittext
+#搜查出来的商品
+resultSearch:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/iv_goods_image
+#添加到购物车
+Addshopping:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/add_to_cart_button
+#购物车数量的图标
+shoopingNumber:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/unread_cart_count_text_view
+#点击返回按钮
+retrunBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/backward_image_view
+#查询页面的返回按钮
+resultReturnBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/iv_top_bar_back
+#home按钮
+homeBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/home_text_view
+#点击购物车图标按钮
+shoopinggo:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/show_buttom_image_view
+#获取商品的价格
+shoopingPrice:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/shop_price_text_view
+#购物车页面的总价
+shoopingtotal:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/total_price_text_view
+#够额车设置商品数量
+shoopingSetNumber:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/goods_qty_edit_text
+#购物车的编辑按钮
+shoopingEditBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/edit_cart_button
+#购物车结算按钮
+shoopingCheck:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/checkout_button
+#删除按钮
+shoppingdelete:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/delete_image_view
+#确认删除
+confirmDelete:
+   type:id
+   value:android:id/button1
+#收藏按钮
+favoriteBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/favorite_image_view
+#收藏入口
+accountFavorites:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/favorite_linear_layout
+#购买按钮
+BuyBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/add_to_cart_button
+#收藏夹商品页面的title
+favoriteTitle:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/goods_name_text_view
+#收藏夹页面的购物车
+favoriteShopping:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/cart_entrance_imageview
+#购物车页面的title
+shoopingTitle:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/goods_name_text_view
+#退出
+quit:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/logout_button
+#购物车页面获取商品的标题
+shoopingGetTitle:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/goods_name_text_view
+#新增地址页面元素
+addshooping:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/btn_add_new_address
+#购物车数据集合
+shoopingList:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/goods_image_view
+#新增地址按钮
+addressBookBtn:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/btn_add_new_addres
+  
+#购物车页面库存量达到后需点击按钮
+shoopingInventory:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/manage_fail_goods_button
+  

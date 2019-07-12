@@ -1,0 +1,66 @@
+#登录
+#登录页电子邮箱
+loginPage_loginEmail:
+  type: id
+  value: email
+#密码
+loginPage_loginPwd:
+  type: id
+  value: password
+
+#登录按钮
+loginPage_signInBtn:
+  type: id
+  value: js_signInBtn
+#登录成功获得欢迎语句
+loginHomePage:
+  type:css
+  value:"#mainWrap > section.user-info.mt5 > div > p"
+#验证码
+loginCode:
+  type: id
+  value: codeSign
+#添加至购物车按钮
+addcart:
+  type: id
+  value: addCart
+#购物车数量框
+shoppingNumber: 
+ type:xpath
+ value:"//input[starts-with(@class,'form-control js_goods_number')]"
+#满减优惠促销码输入框
+promotionCodeInput:
+  type:id
+  value:applyCode
+#促销确认按钮
+promotionCodeApply:
+  type:id
+  value:useApply
+#获得促销文案
+applyMsg:
+  type:css
+  value:"#cartListBox > div.conpon-info > p.conpon-msg.tl.f14.c6 > span"
+#商品原价
+UNitPrice:
+  type:id
+  value:subTotal
+#获得优惠价
+saveprice:
+  type:id
+  value:couponSave
+#优惠后的总价
+grandTotal:
+  type:id
+  value:grandTotal
+#商品单价
+ProductSignPrice:
+  type:id
+  value:unit_price
+#退出按钮
+LogOut:
+  type:css
+  value:"#mainWrap > p > a"
+#清除掉优惠码
+Cancel:
+  type:id
+  value:cancleApply

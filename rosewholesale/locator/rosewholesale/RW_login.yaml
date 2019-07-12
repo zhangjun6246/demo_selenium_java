@@ -1,0 +1,214 @@
+#登录页的登录按钮
+Login_EmailEnter:
+ type:id
+ value:email
+#密码输入框
+Login_PasswordEnter:
+ type:id
+ value:passwordsign
+#验证码输入框 
+Login_SignBtn:  
+ type:id
+ value:js_signInBtn
+#登录按钮
+loginButton:
+ type: id
+ value: js_signInBtn
+#验证码输入框
+Login_verification:
+ type:id
+ value: codeSign  
+
+#提示请输入有效email
+login_ErrInfoEmail:
+ type: xpath
+ value: "//div[@class='ipt_t']/label[@class='error'and@for='email']"
+#密码不正确
+login_ErrInfopassword:
+ type:xpath
+ value:"//*[@id='mainWrap']/div/section[1]/div/p"
+#密码长度小于6
+login_ErrInfopasswordlength:
+ type:xpath
+ value: "//div[@class='ipt_t']/label[@class='error'and@for='passwordsign']"
+#获得用户名
+login_getEmaiName:
+ type:xpath
+ value:"//*[@id='js_saderBar']/ul/li[4]/span"
+   
+#编辑页面
+successful_Edit:
+ type:linkText
+ value:Change password
+ #编辑页面
+successful_Edit_es:
+ type:linkText
+ value:Cambiar la contraseña 
+#修改密码新密码
+Edit_changNewpassword:
+ type:id
+ value:new_password
+#确认新的密码
+Edit_confirmpassword:
+ type:id
+ value:comfirm_password
+#确认修改旧密码
+Edit_changporiginalinput:
+ type:name
+ value:old_password
+#修改密码按钮确认框   
+Edit_confirmEditbtn:
+ type:xpath
+ value:"//*[@id='modpassword']/p/button"
+#密码不一致返回到前面页面
+Passwordontmatchreturn:
+ type:xapth
+ value:"//*[@id='mainWrap']/section/div/p[2]/a"
+  
+#修改密码为空错误提示
+Modify_passwordempty:
+ type: xpath
+ value: "//div[@class='fl i_table_r']/label[@class='error'and@for='old_password']"
+#修改密码小于6位提示  
+Edit_ErrInfopassword:
+ type:xpath
+ value: "//div[@class='fl i_table_r']/label[@class='error'and@for='new_password']"
+#修改密码成功
+Edit_Modifysuccessful:
+ type:xpath
+ value:"//*[@id='mainWrap']/section/div/p[1]"
+#修改密码成功，跳回主页
+successful_link:
+ type:linkText
+ value:You need to log in
+ 
+#退出按钮
+logout_link:
+ type:css
+ value:"//*[text()='Logout']"
+
+#退出按钮
+logout_link_es:
+ type:css
+ value:"#header > div > div.user_box > ul > li:nth-child(6) > a" 
+#返回到主页
+return_home:
+ type:linkText
+ value: Return to Home
+ 
+#忘记密码链接
+forgetpassword_EmailEnt:
+ type:id
+ value:reg_email
+#忘记密码验证码 
+forgetpassword_code:
+ type:id
+ value:access_code
+ #忘记密码确认按钮
+forgetpassword_btnjs:
+ type:id
+ value:js_sendEmial
+#忘记密码邮箱页
+forgetpassword_EmailEnt:
+ type:id
+ value:reg_email
+#忘记密码密码
+forgetpassword_enter:
+ type:id
+ value:password
+#忘记密码确认密码 
+forgetpassword_ReenterEnt:
+ type:id
+ value:password_confirm
+#忘记密码按钮
+forgetpassword_btnjs:
+ type:id
+ value:js_sendEmial
+  
+#邮箱格式错误
+reset_ErrInfoEmail:
+ type:xpath
+ value: "//div[@class='ipt_t']/label[@class='error'and@for='reg_email']"
+#错误的密码
+reset_ErrInfopassword:
+ type:xpath
+ value: "//div[@class='ipt_t']/label[@class='error'and@for='password']"
+#密码不一致
+Modify_passworddifferent:
+ type:xpath
+ value: "//*[@id='mainWrap']/section/div/p[1]"
+ 
+#重置密码成功
+Edit_Modifysuccessful:
+ type:xpath
+ value: "//*[@id='mainWrap']/section/div/p[1]" 
+ 
+ 
+ 
+#重置密码输入框
+forgetpassword_passwordEnt:
+ type:id
+ value:password
+#忘记密码获取邮件成功
+forgetpassword_head:
+ type:xpath
+ value:"//*[@id='mainWrap']/section/header/h4"
+ 
+#忘记密码按钮
+forgetpassword_Confirmpasswordclick:
+ type:id
+ value:js_sendEmial
+ 
+#重置密码返回到前面页面
+forgetpassword_return:
+ type:linkText
+ value:Return to the previous page
+ 
+ #重置密码返回到前面页面
+forgetpassword_return_es:
+ type:linkText
+ value:Regresar a la página anterior
+#退出登录
+signlink:
+ type:css
+ value:"#header > div > div.sign_box > a:nth-child(3)"
+#登录时获取用户名
+signlinkName:
+  type:css
+  value:"#header > div > div.user_box > a"
+#修改新密码重新登录
+modifylogin:
+ type:xpath
+ value:"//*[@id='mainWrap']/section/div/p[2]/a"
+#facebook登录
+loginFaceBook:
+ type:id
+ value:loginFaceBook
+#facebook用户名输入框
+emailenter:
+ type:id
+ value:email
+#facebook密码框
+passwordentr:
+ type:id
+ value:pass
+#facebook确认框
+loginbtn:
+ type:id
+ value:loginbutton
+#修改密码后重新登录
+needtolog:
+  type:css
+  value:"#mainWrap > section > div > p:nth-child(3) > a"
+#密码不一致
+dontmatch:
+  type:xpath
+  value:"//*[@id='modpassword']/ul/li[3]/div/label"
+#验证码错误
+codeError:
+  type:css
+  value:"#mainWrap > div > section.operalBox.signBox > div > p"
+#登录成功后显示的内容
+login_successful:
+  type:css
+  value:"#js_saderBar > ul > li.email"

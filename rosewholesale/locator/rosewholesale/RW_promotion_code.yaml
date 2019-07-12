@@ -1,0 +1,112 @@
+#登录页的登录按钮
+Login_EmailEnter:
+ type:id
+ value:email
+#密码输入框
+Login_PasswordEnter:
+ type:id
+ value:passwordsign
+#验证码输入框 
+Login_SignBtn:  
+ type:id
+ value:js_signInBtn
+#登录按钮
+loginButton:
+ type: id
+ value: js_signInBtn
+#验证码输入框
+Login_verification:
+ type:id
+ value: codeSign
+#获得用户名
+login_getEmaiName:
+ type:xpath
+ value:"//*[@id='js_saderBar']/ul/li[4]/span"
+#登录时获取用户名
+signlinkName:
+  type:css
+  value:"#header > div > div.user_box > a"
+#登录的链接
+signlink:
+ type:css
+ value:"#header > div > div.user_box > a"
+
+#1 顶部导航栏的购物车
+navBar_MyCart:
+  type: id
+  value: js_topCart
+#添加至购物车
+addToBag:
+  type: id
+  value: new_addcart
+#促销券码
+codeInput:
+  type:id
+  value:promotion_code
+#应用按钮
+applyBtn:
+  type:id
+  value:applybtn
+  
+#优惠码的提示范围
+applyMsg:
+  type:id
+  value:apply_msg
+#购物车单件价格
+UNitPrice:
+  type:css
+  value:"#cart_list > div > section > div:nth-child(2) > ul > li.item.item3 > div > strong > span.my_shop_price"
+#总共的价格
+subtotal:
+  type:css
+  value:"#js_floatBox > section > div > div.cartTotal > ul:nth-child(1) > li.colorpink > span.my_shop_price.fb"
+#优惠的价格
+saveprice:
+  type:css
+  value:"#js_floatBox > section > div > div.cartTotal > ul:nth-child(2) > li:nth-child(2) > span.my_shop_price.fb"
+#优惠价格标题save
+savetitle:
+  type:css
+  value:"#js_floatBox > section > div > div.cartTotal > ul:nth-child(2) > li:nth-child(1)"
+#获得总价
+grandTotal:
+  type:css
+  value:"#js_floatBox > section > div > div.cartTotal > ul.grandTotal > li:nth-child(2) > span.my_shop_price.fb"
+#件数输入框
+numberinputbox:
+  type:css
+  value:"#cart_list > div > section > div:nth-child(2) > ul > li.item.item4 > div>input"  
+  
+#直减购物车的价格
+UNitPricezj:
+  type:css
+  value:"#cart_list > div > section > div:nth-child(2) > ul > li.item.item3 > div > strong.org_price > span.my_shop_price"
+#退出按钮
+logout_link:
+ type:linkText
+ value:Logout
+#判断是否选择
+Whetherchoose:
+  type:xpath
+  value:"//input[@class='js_selectGoods']"
+#获取数量
+getcountNumber:
+  type:xpath
+  value:"//input[@class='text fl js_goods_number']"
+#多语言切换
+esEUR:
+  type:xpath
+  value:"//li[@data-bizhong='EUR']"
+#多语言切换优惠价
+esPreferential:
+  type:xpath
+  value:"//*[@id='js_floatBox']/section/div/div[3]/ul[2]/li[2]/span[2]"
+
+#退出按钮多语言
+logout_link_es:
+ type:css
+ value:"#header > div > div.user_box > ul > li:nth-child(6) > a" 
+#多语言按钮计算的总价
+es_total:
+  type:xpath
+  value:"//*[@id='js_floatBox']/section/div/div[3]/ul[3]/li[2]/span[2]"  

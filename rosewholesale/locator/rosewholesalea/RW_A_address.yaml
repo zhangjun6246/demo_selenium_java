@@ -1,0 +1,103 @@
+#主页面的account按钮
+homeaccount:
+  type:xpath
+  value:"//android.widget.TextView[@text='Account']" 
+#登录页面用户输入用户名
+loginName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/email_edittext
+#登录页面密码输入框
+logingPassword:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/password_edittext
+#点击按钮输入框
+loginSign:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/sign_in_button
+#account按钮
+addressAccount:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/account_text_view
+#新增地址页面
+adddressBook:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/shipping_address_text_view
+#新增地址按钮
+addressNewBtn:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/btn_add_new_address
+  		
+#firstName
+firestName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_first_name
+#lastName
+lastName:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_last_name
+#address1
+address1:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_first_address
+#address2:
+address2:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_second_address
+#地区:
+states:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/tv_country
+#选择地区
+chooseStates:
+  type:xpath
+  value:"//android.widget.TextView[@text='France']"
+#province
+province:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_state_province_region
+#选择
+chooseProvince:
+  type:xpath
+  value:"//android.widget.TextView[@text='Ain']"
+#城市
+city:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_city
+#邮编
+code:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/et_zip_code
+#电话号码
+phoneNumber:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/et_phone_number
+#点击done
+done:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/top_bar_right_button
+#选择城市
+chooseStatesUnited:
+   type:xpath
+   value:"//android.widget.TextView[@text='United States']"
+#选择编辑一个地址
+addressEdit:
+   #type:xpath
+   #value:"//android.widget.ImageView[@resource-id='com.globalegrow.app.rosewholesale:id/iv_selected_address']"
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/iv_selected_address
+#地址集合
+AddressList:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/tv_exists_address
+#地址的编辑按钮
+addresEditBtn:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/top_bar_right_button
+#删除按钮
+deleteBtn:
+   type:xpath
+   value:"//android.widget.ImageView[@resource-id='com.globalegrow.app.rosewholesale:id/iv_delete_image']"
+#确认删除
+affirmdelete:
+   type:id
+   value:android:id/button1

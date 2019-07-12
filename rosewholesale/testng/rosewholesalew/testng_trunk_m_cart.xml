@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesalew">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<listener class-name="com.globalegrow.base.RetryListener" /> 
+	</listeners>
+	<!-- id:jenkins编译id(${id}) -->
+	<parameter name="id"  value="${id}"/>
+	<!-- browserName:Browser(手机自带浏览器)/Chrome(谷歌浏览器) -->
+	<parameter name="browserName"  value="Chrome"/>
+	<!-- 配置文件名,因为测试环境已经更改了 -->
+	<parameter name="properties" value="a" />
+	
+	<!-- 运行系统的安卓版本 -->
+	<parameter name="platformVersion"  value="6.0.1"/>
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="http://m.wap-rosewholesale.com.trunk.s1cg.egomsl.com/user/login/sign"/>	
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="ths#^$%^sdaf%T#$%^fasdbhf&amp;U*$%%$^#"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<parameter name="project_code"  value="rosewholesale-wap-a"/>
+	<!-- 发送邮件 -->
+	<parameter name="sendEmail" value="${sendEmail}"/>
+	<parameter name="env"  value="a"/>
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="false"/>
+	<test name="version" preserve-order="true">
+	 <classes>
+	  		<!-- 初始化模块-->
+			<class name="com.globalegrow.base.InitWapTest"></class>
+	 		  <class name="com.globalegrow.rosewholesalew.RW_M_cart">
+				<methods>			
+					   <include name="cart_empty_a" /> 
+					   <include name="cart_product_regular_price" /> 	 					
+						<include name="cart_addLadder_price" />
+						<include name="cart_promote_product"/>
+						<include name="cart_clearance_product" />
+						<include name="cart_addShooping_price" /> 
+						<include name="favorites_addShooping" />
+						<include name="delete_one_product_a" /> 
+					    <include name="delete_all_product_b" />
+						<include name="modify_goods_amount_a" />
+						<include name="modify_goods_number_b" />  
+						<include name="modify_goods_inventory_c"/>  
+						<include name="favorites_product_notlogin"/>
+				</methods>
+			</class>
+			<class name="com.globalegrow.rosewholesalew.RW_M_promotion_code">
+				<methods>
+				 <include name="pro_discountBFB_single" />
+				 <include name="pro_discountBFB_more" /> 
+				 <include name="pro_discountZJ_meet" /> 
+				 <include name="pro_discountZJ_dontmeet" />
+			     <include name="pro_discountZJ_specifyUser" /> 
+               </methods>
+			</class> 
+		</classes>
+	</test>
+</suite>

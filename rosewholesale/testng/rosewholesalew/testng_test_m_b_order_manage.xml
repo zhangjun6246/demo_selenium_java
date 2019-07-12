@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesalew">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<listener class-name="com.globalegrow.base.RetryListener" />  
+	</listeners>
+	<!-- id:jenkins编译id(${id}) -->
+	<parameter name="id"  value="${id}"/>
+	<!-- browserName:Browser(手机自带浏览器)/Chrome(谷歌浏览器) -->
+	<parameter name="browserName"  value="Chrome"/>
+	<!-- 配置文件名 -->
+	<parameter name="properties" value="a" />
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="http://m.wap-rosewholesale.com.a.s1cg.egomsl.com/user/login/sign"/>	
+	<!-- 测试环境PP支付的方式 -->
+	<parameter name="PPaccount" value="441817_1310950685_per@qq.com"/>
+	<parameter name="password" value="123123123"/>
+	<!-- 运行系统的安卓版本 -->
+	<parameter name="platformVersion"  value="6.0.1"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<parameter name="project_code"  value="rosewholesale-wap-a"/>
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="ths#^$%^sdaf%T#$%^fasdbhf&amp;U*$%%$^#"/>	
+	<!-- 发送邮件 -->
+	<parameter name="sendEmail" value="${sendEmail}"/>
+	<!-- 测试环境 -->
+	<parameter name="env"  value="a"/>
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="true"/>
+	<test name="version" preserve-order="true">
+	
+	 <classes>
+	  		<!-- 初始化模块-->
+			<class name="com.globalegrow.base.InitWapTest"></class>
+			<!-- 注册模块 -->
+	 		<class name="com.globalegrow.rosewholesalew.RW_M_order_manage">
+				<methods>			
+					<include name="payment_notlogged" />
+					<include name="payment_notaddress" />  
+					<include name="pay_pp"/>				  
+					<include name="shippingordinary_trackingcode"/>  
+					<include name="shipping_ordinary"/>
+					<include name="shipping_standard"/>
+					<include name="shipping_expedited"/> 				
+					<include name="shipping_dontInsurance"/> 
+					<include name="shipping_insurance"/>					
+					<include name="quick_payment"/>	 			
+					<include name="pay_credit_a"/>
+					<include name="continue_pay_credit_b"/> 
+					<include name="continue_pp_pay"/>
+					<include name="cancelorder"/>  
+				    <include name="quick_paymentnotlogin"/>  
+					
+				</methods>
+			</class> 
+		</classes>
+	</test>
+</suite>

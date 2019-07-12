@@ -1,0 +1,40 @@
+#主页面的account按钮
+homeaccount:
+  type:xpath
+  value:"//android.widget.TextView[@text='Account']" 
+#注册登录页面
+signUP:
+  type:xpath
+  value:"//android.widget.TextView[@text='Sign Up for RoseWholesale']"
+#输入邮箱地址
+signEami:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/email_edittext
+#输入密码的地址
+signPassword:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/password_edittext
+#确认密码
+signConfirmPassword:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/confirm_password_edittext
+#输入用户名
+signNickName:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/nickname_edittext  
+#确定注册
+signJonNow:
+   type:id
+   value:com.globalegrow.app.rosewholesale:id/sign_up_button  
+#各页面的 toast信息,如注册页,登录页
+pages_ToastInfo:
+  type: xpath
+  value: ".//*[contains(@text,'msg')]"
+#去掉协议的
+signAgree:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/register_privacy_check_box
+#主页面的内容：
+homePage:
+  type:id
+  value:com.globalegrow.app.rosewholesale:id/home_text_view

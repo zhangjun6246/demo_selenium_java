@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesalew">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<listener class-name="com.globalegrow.base.RetryListener" /> 
+	</listeners>
+	<!-- id:jenkins编译id(${id}) -->
+	<parameter name="id"  value="${id}"/>
+	<!-- browserName:Browser(手机自带浏览器)/Chrome(谷歌浏览器) -->
+	<parameter name="browserName"  value="Chrome"/>
+	<!-- 配置文件名 -->
+	<parameter name="properties" value="prd" />
+	
+	<!-- 运行系统的安卓版本 -->
+	<parameter name="platformVersion"  value="6.0.1"/>
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="https://loginm.rosewholesale.com/user/login/sign"/>	
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="thfhh*()%$bndfjhfdW#$%#$&amp;%%$FDgsdg"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<parameter name="project_code"  value="rosewholesale-wap-prd"/>
+	<!-- 测试环境 -->
+	<parameter name="env"  value="prd"/>
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="${writeindb}"/>
+	<parameter name="devices" value="${devices}"/>
+	<parameter name="devicesName" value="Apple iPhone 6 Plus"/>
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	<!-- 项目说明 -->
+	<parameter name="test_specification"  value="M版正式环境登录、注册地址模块"/>
+	<test name="version" preserve-order="true">
+	 <classes>
+	  		
+			<!-- 注册模块 -->
+	 		<class name="com.globalegrow.rosewholesalew.RW_M_register">
+				<methods>			
+					 <include name="register_repetition" />
+						<include name="register_wrongemail" />
+						<include name="register_inconformityfail" />
+					    <include name="register_passwordLength" />
+						<include name="register_dontcheck" />
+						<include name="register_terms" />
+						<include name="register_verificationerror" />  
+						<!-- <include name="register_succeed_a" />
+						<include name="register_success_b" /> -->
+						<!-- <include name="register_succeed_c" />  -->
+				</methods>
+			</class>
+				<class name="com.globalegrow.rosewholesalew.RW_M_login">
+					<methods>
+						<include name="signin_wrongemail" />
+						<include name="signin_wrongpassword" />
+						<include name="sigin_passwordLength" />
+						<!-- <include name="sigin_forgetpassword" /> -->
+						<include name="sigin_successful" />
+			
+					</methods>
+				</class>
+			<class name="com.globalegrow.rosewholesalew.RW_M_addressManage">
+				<methods>					
+						<include name="AllFieldIsNull" /> 
+						<include name="eachFieldIsNull"/> 					
+						<include name="PhoneNumberChar"/>
+						<include name="AdressLess5"/>
+						<include name="AdressEquals5"/> 
+						<include name="EditAdressAndSave"/>
+						<include name="EditAdressAndCancle"/>  
+						<include name="DeleteAdressSinger"/> 
+						<include name="DeleteAdressAall"/> 						
+				</methods>
+			</class>  
+		</classes> 
+	</test>
+</suite>

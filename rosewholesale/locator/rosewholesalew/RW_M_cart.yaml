@@ -1,0 +1,113 @@
+#登录
+#登录页电子邮箱
+loginPage_loginEmail:
+  type: id
+  value: email
+#密码
+loginPage_loginPwd:
+  type: id
+  value: password
+
+#登录按钮
+loginPage_signInBtn:
+  type: id
+  value: js_signInBtn
+#登录成功获得欢迎语句
+loginHomePage:
+  type:css
+  value:"#mainWrap > section.user-info.mt5 > div > p"
+#验证码
+loginCode:
+  type: id
+  value: codeSign
+#购物车按钮
+shoppingButton:
+  type:id
+  value:cartNum
+#空购物车提示
+shoopingEmpty:
+  type:css
+  value:"#cartListBox > div > p"
+  
+#按钮跳转到首页
+continueShoppingBtn:
+  type:css
+  value:"#cartListBox > div > a"
+#添加至购物车按钮
+addcart:
+  type: id
+  value: addCart
+#商品页商品价格
+shoppingPrice:
+  #type:id
+  #value:unit_price
+  type:xpath
+  value:"//*[@id='unit_price']"
+#购物车页面商品总价
+shoppingTotal:
+  type:id
+  value:subTotal
+#增加商品页面的个数
+shoppingAddNumber:
+  type:id
+  value:js_input_quantity
+#清仓促销的标识
+clearIdentification:
+  type:css
+  value:"#cartListBox > table > tbody > tr > td:nth-child(2) > p.red.ttu"
+#购物车页面设置购物的个数
+shoopingAddNumber:
+  type:className
+  value:"form-control js_goods_number"
+  
+#商品页添加到收藏夹
+shoppingAddFavorites:
+  type:xpath
+  value:"//button[@class='btn-db addfav']"
+#商品确认添加到收藏夹
+confirmOk:
+  type:css
+  value:"#layermbox2 > div.layermmain > div > div > div.layermbtn > span"
+  value:"ok"
+#收藏夹页面点击标题进行跳转
+favoriteLink:
+  type:xpath
+  value:"//p[@class='pro-tit']/a"
+    
+#购物车页面第一个商品的单价
+shoppingSignPrice:
+  type:css
+  value:"#cartListBox > table > tbody > tr:nth-child(1) > td:nth-child(2) > p.price-line > strong > span.my_shop_price"
+#点击selectall按钮
+selectAllLink:
+  type:id
+  value:selected_allGoods
+#选择第一个商品点击删除
+selectDelect:
+  type:css
+  value:"#cartListBox > table > tbody > tr:nth-child(1) > td.pro-control > a"
+#确认是否删除按钮
+ConfirmDeletion:
+  type:linkText
+  value:YES
+#购物车数量框
+shoppingNumber: 
+ type:xpath
+ value:"//input[starts-with(@class,'form-control js_goods_number')]"
+#手动增加产品数量
+shoppingNumberBtn:
+  type:css
+  value:"#cartListBox > table > tbody > tr > td:nth-child(2) > div > div > a.btn_add.js_addNum"
+#退出按钮
+LoGout:
+  type:css
+  value:"#mainWrap > p > a"
+#确认删除
+deleteOKYes:
+  type:xpath
+  value:"/html/body/div[3]/div[2]/div/div/div[2]/span[2]"
+#跳转到购物车
+gotoshiiping:
+  type:xpath
+  value:"//a[@class='cart after_icon']"
+  

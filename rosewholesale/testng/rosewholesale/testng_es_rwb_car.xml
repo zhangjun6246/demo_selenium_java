@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesale">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<listener class-name="com.globalegrow.base.RetryListener" /> 
+	</listeners>
+	<parameter name="id" value="${id}" />
+	<!-- 运行谷歌浏览器 BW:firefox chrome ie -->
+	<parameter name="browserName" value="${browserName}" />
+	<!-- 配置文件名 -->
+	<parameter name="properties" value="d" />
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="http://login.rosewholesale.com.trunk.s1.egomsl.com/es/m-users-a-sign.htm"/>	
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="ths#^$%^sdaf%T#$%^fasdbhf&amp;U*$%%$^#"/>	
+	
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<parameter name="project_code"  value="rosewholesale-pc-d"/>
+
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="${writeindb}"/>
+	<parameter name="env"  value="d"/>
+	<test name="version" preserve-order="true">
+	 <classes>
+		<class name="com.globalegrow.rosewholesale.RW_cart">
+			<methods>
+				<include name="cart_empty_a" />
+				 <include name="cart_empty_b" /> 
+				<include name="cart_product_regular_price" />
+				<include name="cart_product_Ladder_price" /> 							
+				<include name="cart_product_promote_product" /> 
+				<include name="cart_product_clearance_product" />
+				<include name="cart_product_repeat" />
+				 <include name="mergeshoppingcart_product" />				 
+				 <include name="cart_product_repeat" />				
+				<include name="delete_one_product_a" />
+				<include name="delete_all_product_b" />
+				<include name="delete_all_product_c" /> 								
+				<include name="check_historical_record_d" />
+				<include name="delete_product" />
+				<include name="continue_shopping" /> 
+				<include name="modify_goods_amount_a" /> 
+				<include name="modify_goods_number_b" />
+				<include name="modify_goods_inventory" /> 
+				<include name="savefor_later_a" /> 
+				<include name="savefor_later_b" /> 
+				<include name="savefor_later_notlogin" />
+	
+				<include name="favorites_product_notlogin_a" />
+				<include name="favorites_product_mobile_b" />			
+				 <include name="favorites_product_add_a" />
+				<include name="favorites_product_add_b" />
+				<include name="cart_favorites_product_a" />
+				<include name="cart_favorites_product_b" />
+				<include name="delect_all_notcheck_a" />
+				<include name="delect_single_product_b" />
+				<include name="delect_all_product_c" /> 
+			</methods> 
+		</class>	
+		<class name="com.globalegrow.rosewholesale.RW_promotion_code">
+			<methods>
+				<include name="pro_discountBFB_single" />	
+				<include name="pro_discountBFB_more"/>	 	
+		   		 <include name="pro_discountZJ_meet"/>
+		   		<include name="pro_discountZJ_dontmeet"/> 
+		   		<include name="pro_discountZJ_specifyUser"/> 
+			</methods> 
+		</class>	
+	 </classes>
+	</test>
+</suite>

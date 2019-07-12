@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="rosewholesale">
+	<!-- 配置testng监听器 -->
+	<listeners>
+		<listener class-name="com.globalegrow.base.TestngListener2" />
+		<listener class-name="com.globalegrow.base.RetryListener" />
+	</listeners>
+	<parameter name="id" value="${id}" />
+	
+	<!-- 运行谷歌浏览器 BW:firefox chrome ie -->
+	<parameter name="browserName" value="${browserName}" />
+	<!-- 配置文件名 -->
+	<parameter name="properties" value="prd" />
+	<!-- 测试地址 -->
+	<parameter name="testUrl"  value="https://es.rosewholesale.com/"/>	
+	<!-- 测试秘钥测试环境 -->
+	<parameter name="keys"  value="thfhh*()%$bndfjhfdW#$%#$&amp;%%$FDgsdg"/>	
+	<!-- 用户名-->
+	<parameter name="userid"  value="${userid}"/>
+	<!-- job名 -->
+	<parameter name="tastjob"  value="${tastjob}"/>
+	<!-- 是否在预发布环境 -->
+	<parameter name="preRelease" value="${preRelease}"/>
+	<!-- 测试环境PP支付的方式 -->
+	<parameter name="PPaccount" value="shoppingonline6688@hotmail.com"/>
+	<parameter name="project_code"  value="rosewholesale-pc-prd"/>
+
+
+	<!--参数的值在什么环境  -->
+	<parameter name="env"  value="prd"/>
+	
+	<!-- 数据是否写入数据库(true写入,false不写入) -->
+	<parameter name="writeindb" value="${writeindb}"/>
+	<!-- 项目说明 -->
+	<parameter name="test_specification"  value="PC西班牙常规测试支付模块"/>
+	
+	<test name="version" preserve-order="true">
+		 <classes>
+			  <class name="com.globalegrow.rosewholesale.RW_conventional">
+				<methods>
+					<include name="registered" />
+				 	<include name="login" /> 			 	
+					<include name="cart_price"/>
+					<include name="cart_delete"/>
+					<include name="cart_addProduct"/>
+						
+					<include name="product_price"/> 
+					<include name="product_picture"/>
+					<include name="product_sizeColor"/> 
+					<include name="Fuzzy_search"/> 
+					<include name="sku_search"/>
+					
+				<!-- bug未修改	<include name="title_search"/>  -->
+					<include name="quick_pay"/>
+					<include name="pp_pay"/>
+					<include name="card_pay"/> 
+					
+				</methods> 
+			</class> 
+	 
+	 </classes>
+	</test>
+</suite>

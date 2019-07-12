@@ -1,0 +1,190 @@
+#登录页电子邮箱
+loginPage_loginEmail:
+  type: id
+  value: email
+
+#密码
+loginPage_loginPwd:
+  type: id
+  value: password
+#验证码输入框 
+Login_SignBtn:  
+ type:id
+ value:js_signInBtn
+#验证码
+loginCode:
+  type: id
+  value: codeSign
+#登录按钮
+loginPage_signInBtn:
+  type: id
+  value: js_signInBtn
+#登录成功获得欢迎语句
+loginHomePage:
+  type:css
+  value:"#mainWrap > section.user-info.mt5 > div > p"
+#我的主页
+myaccount:
+  type:linkText
+  value:My Account
+#电子邮箱
+loginEmail:
+  type: id
+  value: email
+#密码
+loginPwd:
+  type: id
+  value: passwordsign
+#验证码
+identifyingCode:
+  type: id
+  value: code
+#登录按钮
+signInBtn:
+  type: id
+  value: js_signInBtn
+#退出按钮
+LoGout:
+  type:linkText
+  value:logout
+
+#登录Facebook
+#Facebook登录链接
+FBLogin:
+  type: id
+  value: btnFBLogin
+#账号
+FBemail:
+  type: name
+  value: email
+#密码
+FBpass:
+  type: name
+  value: pass
+#登录
+FBloginbutton:
+  type: name
+  value: login
+#继续
+FBcontintue:
+  type: id
+  value: u_0_b
+  
+#地址管理链接
+BookBotton:
+  type: linkText
+  value: Shipping Address Book
+  
+#新增地址
+addShipAddr:
+  type: linkText
+  value: ADD NEW ADDRESS
+#地址管理
+#firstname
+firstname:
+  type: id
+  value: firstname
+#lastname
+lastname:
+  type: id
+  value: lastname
+#电子邮件
+email:
+  type: id
+  value: email 
+#地址1
+addressline1:
+  type: id
+  value: addressline1 
+#地址2
+addressline2:
+  type: id
+  value: addressline2  
+#Country/Region
+CountryRegion:
+  type: name
+  value: country 
+#State/County
+province:
+  type: name
+  value: province 
+#city
+city:
+  type: id
+  value: city 
+#电话号码
+tel:
+  type: id
+  value: tel
+#邮政编码
+zipcode:
+  type: id
+  value: zipcode  
+#提交
+comfirmEdit:
+  type: css
+  value: "#addressfrom > div.pt10 > button"
+#错误提示信息:
+firstNameErrorMsg:
+  type: css
+  value: "label[for='firstname']"  
+#错误提示信息:
+lastNameErrorMsg:
+  type: css
+  value: "label[for='lastname']"  
+#错误提示信息:
+emailErrorMsg:
+  type: css
+  value: "label[for='email']"
+#错误提示信息:
+addressline1ErrorMsg:
+  type: css
+  value: "label[for='addressline1']"
+#错误提示信息:
+countryErrorMsg:
+  type: css
+  value: "label[for='country']"
+#错误提示信息:
+statesErrorMsg:
+  type: css
+  value: "label[for='province']"
+#错误提示信息:
+statesErrorMsg2:
+  type: css
+  value: "label[for='states_0_0']"
+#错误提示信息:
+cityErrorMsg:
+  type: css
+  value: "label[for='city']"
+#错误提示信息:
+telErrorMsg:
+  type: css
+  value: "label[for='tel']"
+#错误提示信息:
+zipcodeErrorMsg:
+  type: css
+  value: "label[for='zipcode']"
+#save按钮
+saveBtn:
+  type: css
+  value: "#addressfrom > div.pt10 > button"
+#地址列表
+addressList:
+  type: css
+  value:" #js_shippingAdreWrap > ul > li"
+#删除邮件按钮
+deleteList:
+  type: className
+  value: delete
+#弹出框中的yes链接
+delete_yes:
+  type: xpath
+  value:"//*[text()='YES']"
+#编辑按钮
+Edit:
+  type:css
+  value:"#js_shippingAdreWrap > ul > li > div > a.btn.btn-default.js_loading"
+#删除一个按钮
+delectBtn:
+  type:css
+  value:"#js_shippingAdreWrap > ul > li:nth-child(1) > div > a.btn.btn-default.btn-delete.ml10.js_del"  

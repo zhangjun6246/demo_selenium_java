@@ -1,0 +1,248 @@
+#登录页的登录按钮
+Login_EmailEnter:
+ type:id
+ value:email
+#密码输入框
+Login_PasswordEnter:
+ type:id
+ value:passwordsign
+#验证码输入框 
+Login_SignBtn:  
+ type:id
+ value:js_signInBtn
+#登录按钮
+loginButton:
+ type: id
+ value: js_signInBtn
+#验证码输入框
+Login_verification:
+ type:id
+ value: codeSign
+
+#1 顶部导航栏的购物车
+navBar_MyCart:
+  type: id
+  value: js_topCart
+#2 空购物车页面的CONTINUE SHOPPING
+cartPage_ContinueShopping:
+  type: linkText
+  value: CONTINUE SHOPPING
+#3 空购物车页面的提示语,Your shopping bag is empty.
+cartPage_EmptyCartNote:
+  type: xpath
+  value: "//div[@id='cart_list']/section[@class='noGoods']/h4"
+#购物车页面总价
+shoppingtotal:
+  type:css
+  value:"#js_floatBox > section > div > div.cartTotal > ul.grandTotal > li:nth-child(2) > span.my_shop_price.fb"  
+#商品价格
+unitPrice:
+  type: id
+  value: unit_price2
+#添加至购物车
+addToBag:
+  type: id
+  value: new_addcart
+
+#件数输入框
+numberinputbox:
+  type:css
+  value:"#cart_list > div > section > div:nth-child(2) > ul > li.item.item4 > div>input"  
+  
+#购物车商品的标题
+Commoditytitle:
+  #type:css
+  #value:"#cart_list > div > section > div:nth-child(2) > ul:nth-child(1) > li.item.item2"
+  type:xpath
+  value:"//li[@class='item item2']/a" 
+#购物车商品的标题多语言
+Commoditytitlees:
+  type:xpath
+  value:"//li[@class='item item2']/a"  
+#商品页面的标题
+productTile:
+  type:css
+  value:"#mainWrap > div.product-intro.clearfix > div.tabBox > header > div:nth-child(1) > h1"
+#商品页价格
+productPrice:
+  type:id
+  value:unit_price2
+#登录的链接
+signlink:
+ type:css
+ value:"#header > div > div.sign_box > a:nth-child(3)"
+#登录的链接
+signlinkName:
+ type:css
+ value:"#header > div > div.user_box > a"
+
+#商品总价
+grandTotal:
+ type:css
+ value:"#js_floatBox > section > div > div.cartTotal > ul.grandTotal > li:nth-child(2) > span.my_shop_price.fb"
+#退出按钮
+logout_link:
+ type:linkText
+ value:Logout
+#退出按钮多语言
+logout_link_es:
+ type:css
+ value:"#header > div > div.user_box > ul > li:nth-child(6) > a" 
+#返回到主页
+return_home:
+ type:linkText
+ value: Return to Home
+#购物车的总价
+shoppingcart_total:
+ type:css
+ value:"#cart_list > div > section > div:nth-child(2) > ul"
+#购物车单个商品的价格
+singlePrice:
+ type:css
+ value:"#cart_list > div > section > div:nth-child(2) > ul:nth-child(1) > li.item.item4 > p.item_tatal > span.my_shop_price.fb" 
+#购物车单个商品删除
+signleDelete:
+ type:css
+ value:"#cart_list > div > section > div:nth-child(2) > ul:nth-child(1) > li.item.item4 > p.pb10 > a"
+#确认删除
+ConfirmDeletion:
+ type:css
+ value:"#xubox_layer1 > div.xubox_main > span.xubox_botton > a.xubox_yes.xubox_botton2"
+#取消勾选
+Uncheck:
+ type:css
+ value:"#cart_list > div > section > div:nth-child(2) > ul:nth-child(1) > li.item.item0 > input"
+#添加到收藏夹
+AddFavorites:
+  type:className
+  value:addToWishBtn js_addToWishBtn
+#点击收藏
+AddFavorites2:
+  type:linkText
+  value: Add to Favorites
+#点击收藏多语言
+AddFavorites2es:
+  type:linkText
+  value:Agregar a los Favoritos
+#收藏夹商品标题
+FavoritesProductTitle:
+ type:css
+ value:"#userMain > div.userH_box.myFavorites.p15 > div.fav_con > div.proList > ul > li > p.pro_name > a"
+#收藏夹商品价格
+FavoritesProductPrice:
+ type:css
+ value:"#userMain > div.userH_box.myFavorites.p15 > div.fav_con > div.proList > ul > li > p.pro_price.tc.pt5 > strong.my_shop_price.fb"
+#收藏夹集合
+favoriteList:
+ type:css
+ value:"#userMain > div.userH_box.myFavorites.p15 > div.fav_con > div.proList > ul> li"
+#收藏夹图片链接
+favoriteLink:
+ type:css
+ value:"#userMain > div.userH_box.myFavorites.p15 > div.fav_con > div.proList > ul > li > p.pr.tc > a > img"
+#删除所有
+delectALL:
+  type:id
+  value:del_all_action
+#确认删除所有
+confirmALL:
+  type:xpath
+  value:"//*[@id='xubox_layer2']/div[1]/span[2]/a[1]"
+#确认删除所有
+confirmALL2:
+  type:xpath
+  value:"//*[@id='xubox_layer1']/div[1]/span[2]/a[1]"
+#取消勾选所有selectAll
+confimCheck:
+  type:id
+  value:selected_allGoods
+#件数输入框
+numberinputbox:
+  type:css
+  value:"#cart_list > div > section > div:nth-child(2) > ul > li.item.item4 > div>input"
+#saveForLate
+saveForLate:
+  type:id
+  value:add_to_save
+#未选择商品给予提示
+saveMessage:
+  type:xpath
+  value:"//*[contains(@class,'xubox_msg xubox_text')]"
+#未选择商品提示的OK按钮
+saveMessageOkBtn:
+  type:xpath
+  value:"//*[contains(@class,'xubox_yes xubox_botton1')]"
+#历史记录列表
+historyList:
+  type:css
+  value:"#tab-history > div > div > ul > li" 
+#收藏夹按钮
+favoritesBtn:
+  type:id
+  value:Js_topFavorites
+#收藏夹
+FavoriteHead:
+  type:css
+  value:"#tabs > li:nth-child(2) > a"
+#收藏夹地址下方的价格
+Facoriteprice:
+  type:css
+  value:"#tab-favorite > div > div > ul > li > p > strong.my_shop_price"
+#搜索商品的收藏
+cheapFacorite:
+  type:css
+  #value"#js_proList > ul > li:nth-child(1) > p.pro_price.pt5 > a.addToFav.js_addToFav > i"
+  value:"#js_proList > ul > li:nth-child(1) > p.pro_price.pt5 > a > i"
+#搜索商品页第一个商品的标题
+cheapTitle:
+  type:css
+  value:"#js_proList > ul > li:nth-child(1) > p.pro_name.pt10 > a"
+#搜索商品页第一个商品的几个
+cheapPrice:
+  type:css
+  value:"#js_proList > ul > li:nth-child(1) > p.pro_price.pt5 > strong.my_shop_price.f14"
+#收藏夹删除全部按钮 
+#delectAllBtn:
+#  type:id
+#  value:js_deteAllGoods 
+#收藏夹确认删除单个按钮
+delectSignOk:
+  #type:linkText
+  #value:Yes
+  type:xpath
+  value:"//a[@class='xubox_yes xubox_botton2']"
+#收藏夹删除所有
+delectAllCheck:
+  type:id
+  value:selected_allGoods
+#删除单个
+delectSign:
+  #type:linkText
+  #value:deletel
+  type:id
+  value:js_deteAllGoods
+#商品页数量
+productNumber:
+  type:id
+  value:input_quantity
+
+#单个删除一个商品
+delectSignProduct:
+  type:css
+  value:"#userMain > div.userH_box.myFavorites.p15 > div.fav_con > div.proList > ul > li:nth-child(1) > p.detaWrap.tc.pt5 > a.tag_c.deteBtn.js_deteGoods"
+#登录成功后标识
+loginSucced:
+  type:css
+  value:"#js_saderBar > div.more_coupon > a"
+#多语言
+esEUR:
+  type:xpath
+  value:"//li[@data-bizhong='EUR']"
+#cheap页面调用js
+chearpCollection:
+  type:xpath
+  value:"//a[@class='addToFav js_addToFav ml5 addToFavCur']"
+#点击收藏
+allfavorite:
+  type:linkText
+  value:"ALL FAVORITE"  

@@ -1,0 +1,171 @@
+#登录页的登录按钮
+Login_EmailEnter:
+ type:id
+ value:email
+#密码输入框
+Login_PasswordEnter:
+ type:id
+ value:passwordsign
+#验证码输入框 
+Login_SignBtn:  
+ type:id
+ value:js_signInBtn
+#登录按钮
+loginButton:
+ type: id
+ value: js_signInBtn
+#验证码输入框
+Login_verification:
+ type:id
+ value: codeSign  
+
+#地址编辑页
+Address_page:
+ type:xpath
+ value:"//*[@id='userMain']/header[2]/a[3]"
+ 
+#firstname
+firstname:
+  type: id
+  value: firstname
+#lastname
+lastname:
+  type: id
+  value: lastname
+#电子邮件
+email:
+  type: id
+  value: email 
+#地址1
+addressline1:
+  type: id
+  value: addressline1 
+#地址2
+addressline2:
+  type: id
+  value: addressline2  
+#Country/Region
+CountryRegion:
+  type: name
+  value: country 
+#State/County
+province:
+  type: name
+  value: province 
+#city
+city:
+  type: id
+  value: city 
+#电话号码
+tel:
+  type: id
+  value: tel
+#邮政编码
+zipcode:
+  type: id
+  value: zipcode  
+
+#地址增加按钮
+shippingAddressButtom:
+ type:id
+ value:addShipAddr
+#提交按钮
+comfirmEdit:
+ type:xpath
+ value:"//*[@id='addressfrom']/div/button/span"
+ #错误提示信息:
+firstNameErrorMsg:
+  type: css
+  value: "label[for='firstname']"  
+#错误提示信息:
+lastNameErrorMsg:
+  type: css
+  value: "label[for='lastname']"  
+#错误提示信息:
+emailErrorMsg:
+  type: css
+  value: "label[for='email']"
+#错误提示信息:
+addressline1ErrorMsg:
+  type: css
+  value: "label[for='addressline1']"
+#错误提示信息:
+countryErrorMsg:
+  type: css
+  value: "label[for='country']"
+#错误提示信息:
+statesErrorMsg:
+  type: xpath
+  value: "//div[@class='state_0_0 pl10']/label[@class='error' and@for='consignee_0']"
+#错误提示2  
+statesErrorMsg2:
+  type:css
+  value:"#addressfrom > ul > li:nth-child(7) > div > div > label"
+#错误提示信息:
+cityErrorMsg:
+   type: xpath
+   value:"//*[@id='addressfrom']/ul/li[8]/div/label"
+#错误提示信息:
+telErrorMsg:
+  type: xpath
+  value: "//div[@class='clearfix']/label[@class='error' and@for='tel']"
+#错误提示信息:
+zipcodeErrorMsg:
+  type: xpath
+  value:"//*[@id='addressfrom']/ul/li[10]/div/label"
+ 
+#所有地址列表:
+ShippingAddressList:
+ type:css
+ value: "div#ship_addr_list > div.list"  
+ 
+#增加地址成功后返回
+Backlist:
+ type:css
+ value:"#mainWrap > section > div > p:nth-child(3) > a"
+#删除按钮
+DeleteAddress:
+ type:LinkText
+ value:Delete
+#编辑按钮
+EditBtton:
+ type:xpath
+ value:"//*[@id='ship_addr_list']/div[1]/div/a[1]"
+ 
+#弹框提示是否要删除
+ConfirmDeletion:
+ type:css
+ value:"#xubox_layer1 > div.xubox_main > span.xubox_botton > a.xubox_yes.xubox_botton2"
+ 
+ 
+#添加地址成功提示信息:
+sucessMsg:
+  type: xpath
+  value: "//*[@id='mainWrap']/section/div/p[1]"  
+#firstname原地址
+originaladdressfirstname:
+  type:xpath
+  value:"//*[@id='ship_addr_list']/div[1]/ul/li[1]/span[1]"
+  
+originaladdressfirstname:
+  type:xpath
+  value:"//*[@id='ship_addr_list']/div[1]/ul/li[1]/span[2]"
+originaladdressemail:
+  type:xpath
+  value:"//*[@id='ship_addr_list']/div[1]/ul/li[7]/span"
+#判断标识是否存在
+Shippingprovince:
+  type: css
+  value:"#addressfrom > ul > li:nth-child(7) > div > div"
+#个人信息页，查看更多
+SeemoreLink:
+  type:linkText
+  value:See More >>
+#登录成功后标识
+loginSucced:
+  type:css
+  value:"#js_saderBar > div.more_coupon > a"
+#登录的链接
+signlinkName:
+ type:css
+ value:"#header > div > div.user_box > a"
